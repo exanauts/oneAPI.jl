@@ -14,6 +14,7 @@ jobs:
   pvc:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      JULIA_CPU_THREADS: 4
     runs-on: [self-hosted, linux, X64, gpu, oneapi]
     strategy:
       matrix:
